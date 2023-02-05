@@ -2,7 +2,7 @@ import flatpickr from "flatpickr";
 import "flatpickr/dist/flatpickr.min.css";
 import Notify from './nofify-config';
 
-refs = {
+const refs = {
   dataTimePicker: document.querySelector('#datetime-picker'),
   btnStart: document.querySelector('button[data-start]'),
   btnReset: document.querySelector('button[data-reset]'),

@@ -1,6 +1,6 @@
 import Notify from './nofify-config';
 
-refs = {
+const refs = {
   firstDelay: document.querySelector('input[name="delay"]'),
   step: document.querySelector('input[name="step"]'),
   amount: document.querySelector('input[name="amount"]'),
