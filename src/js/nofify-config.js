@@ -10,5 +10,4 @@ Notify.init({
       notiflixIconColor: 'rgba(255,255,255,0.8)'
     }
   });
-
   export default Notify;
