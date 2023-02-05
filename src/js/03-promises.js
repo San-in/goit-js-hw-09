@@ -41,8 +41,6 @@ function createPromise(position, delay) {
     },delay);
   });
 }
-/// НЕ ЗРОЗУМІВ ЩО ХОТІЛИ В ОСТАННЬОМУ ЗАВДАННІ СТОСОВНО ОДНОГО ПРОМІСУ
-
 function createOnePromise(position,delay) {
   return new Promise((resolve, reject) => {
     setTimeout(() =>{
