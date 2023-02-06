@@ -23,7 +23,7 @@ const options = {
     defaultDate: new Date(),
     minuteIncrement: 1,
     onClose(selectedDates){
-      promise(selectedDates)
+      isDateInThePresent(selectedDates)
       .then((date) => {
           refs.btnStart.removeAttribute('disabled');
           refs.btnReset.removeAttribute('disabled');
@@ -60,7 +60,7 @@ function clickOnBtnStart(event) {
   refs.dataTimePicker.setAttribute('disabled', true);
   startTimer(timerId);
 }
-function promise(selectedDates) {
+function isDateInThePresent(selectedDates) {
   return new Promise((resolve, reject) => {
     if (selectedDates[0] > new Date()){
       resolve(selectedDates);
